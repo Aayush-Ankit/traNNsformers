@@ -74,7 +74,7 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
     if_hist = 1;
     if (nn.prunemode == 2)
         % find the updated clustering statistics & plot them (histograms)
-        figure(1),
+        fig = figure(1);
         for i = 1:nn.n-1
             prunestats = 100* sum(sum(nn.map{i}))/(size(nn.map{i},1) * size(nn.map{i},2));
             fprintf(fid, 'Pruned percentage of Layer %d: %2.2f%%.\n', i, 100-prunestats);
@@ -83,7 +83,7 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
             conn_matrix = logical(nn.cmap{i}) | logical(nn.pmap{i});
             analyse_cluster(nn.clusters{i}, conn_matrix, if_hist);
         end
-        saveas(gcf, sprintf('output/%s/hist.png', data_name))
+        saveas(fig, sprintf('output/%s/hist.png', data_name))
     end
 
     fclose(fid);

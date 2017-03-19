@@ -18,25 +18,25 @@ mkdir (sprintf (dirspec, data_name));
 
 run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
 
-%% SVHN
-data_name = 'svhn';
-epochs = 80;
-prune_slowdown = epochs_mnist / epochs;
-net = [1024, 1200, 1200, 10];
-dataset_pathid = sprintf (dataset_path, data_name);
-mkdir (sprintf (dirspec, data_name));
-
-run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
-
-%% CIFAR10
-data_name = 'cifar10';
-epochs = 120;
-prune_slowdown = epochs_mnist / epochs;
-net = [1024, 1200, 1200, 10];
-dataset_pathid = sprintf (dataset_path, data_name);
-mkdir (sprintf (dirspec, data_name));
-
-run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
+% %% SVHN
+% data_name = 'svhn';
+% epochs = 80;
+% prune_slowdown = epochs_mnist / epochs;
+% net = [1024, 1200, 1200, 10];
+% dataset_pathid = sprintf (dataset_path, data_name);
+% mkdir (sprintf (dirspec, data_name));
+% 
+% run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
+% 
+% %% CIFAR10
+% data_name = 'cifar10';
+% epochs = 120;
+% prune_slowdown = epochs_mnist / epochs;
+% net = [1024, 1200, 1200, 10];
+% dataset_pathid = sprintf (dataset_path, data_name);
+% mkdir (sprintf (dirspec, data_name));
+% 
+% run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
 
 
 
