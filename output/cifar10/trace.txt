@@ -1,0 +1,20 @@
+/home/min/a/aankit/AA/ReSpArch-SpintronicSNNProcessor_DAC_2017/Matlab/spiking_relu_conversion-master/dlt_cnn_map_dropout_nobiasnn/data/cifar10_uint8.matPruned percentage of Layer 1 : 0.00%.
+Pruned percentage of Layer 2 : 0.00%.
+Pruned percentage of Layer 3 : 0.00%.
+increasing the pruning threshold err_prev = 1.0000	 err_crr = 0.4389
+epoch 1/120. Took 8.0022 seconds. Mini-batch mean squared error on training set is 0.45057; Full-batch train err = 0.438898
+Pruned percentage of Layer 1 : 1.67%.
+Pruned percentage of Layer 2 : 1.67%.
+Pruned percentage of Layer 3 : 6.68%.
+increasing the pruning threshold err_prev = 0.4389	 err_crr = 0.4283
+epoch 2/120. Took 8.0674 seconds. Mini-batch mean squared error on training set is 0.43544; Full-batch train err = 0.428296
+Pruned percentage of Layer 1 : 3.32%.
+Pruned percentage of Layer 2 : 3.32%.
+Pruned percentage of Layer 3 : 12.65%.
+increasing the pruning threshold err_prev = 0.4283	 err_crr = 0.4269
+epoch 3/120. Took 8.1482 seconds. Mini-batch mean squared error on training set is 0.42788; Full-batch train err = 0.426863
+Pruned percentage of Layer 1 : 5.04%.
+Pruned percentage of Layer 2 : 5.05%.
+Pruned percentage of Layer 3 : 17.54%.
+increasing the pruning threshold err_prev = 0.4269	 err_crr = 0.4185
+epoch 4/120. Took 8.1666 seconds. Mini-batch mean squared error on training set is 0.42325; Full-batch train err = 0.418543

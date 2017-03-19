@@ -1,0 +1,88 @@
+epoch 1/20. Took 10.1754 seconds. Mini-batch mean squared error on training set is 0.34355; Full-batch train err = 0.163982
+Pruned percentage of Layer 1 : 0.00%.
+Pruned percentage of Layer 2 : 0.00%.
+Pruned percentage of Layer 3 : 0.00%.
+epoch 2/20. Took 10.2754 seconds. Mini-batch mean squared error on training set is 0.13048; Full-batch train err = 0.091394
+Pruned percentage of Layer 1 : 4.72%.
+Pruned percentage of Layer 2 : 4.83%.
+Pruned percentage of Layer 3 : 5.68%.
+epoch 3/20. Took 10.2845 seconds. Mini-batch mean squared error on training set is 0.091542; Full-batch train err = 0.070570
+Pruned percentage of Layer 1 : 9.33%.
+Pruned percentage of Layer 2 : 9.61%.
+Pruned percentage of Layer 3 : 10.50%.
+epoch 4/20. Took 10.3307 seconds. Mini-batch mean squared error on training set is 0.074893; Full-batch train err = 0.058570
+Pruned percentage of Layer 1 : 13.94%.
+Pruned percentage of Layer 2 : 14.61%.
+Pruned percentage of Layer 3 : 14.74%.
+epoch 5/20. Took 10.2932 seconds. Mini-batch mean squared error on training set is 0.064069; Full-batch train err = 0.049411
+Pruned percentage of Layer 1 : 18.61%.
+Pruned percentage of Layer 2 : 19.64%.
+Pruned percentage of Layer 3 : 18.35%.
+epoch 6/20. Took 10.3649 seconds. Mini-batch mean squared error on training set is 0.056596; Full-batch train err = 0.043160
+Pruned percentage of Layer 1 : 23.31%.
+Pruned percentage of Layer 2 : 24.46%.
+Pruned percentage of Layer 3 : 21.36%.
+epoch 7/20. Took 10.2919 seconds. Mini-batch mean squared error on training set is 0.050934; Full-batch train err = 0.038527
+Pruned percentage of Layer 1 : 27.93%.
+Pruned percentage of Layer 2 : 29.03%.
+Pruned percentage of Layer 3 : 23.53%.
+epoch 8/20. Took 10.311 seconds. Mini-batch mean squared error on training set is 0.046835; Full-batch train err = 0.035382
+Fraction of synapses unclustered = 0.2018
+clustering takes 27.73 secondsPruned percentage of Layer 1 : 20.19%.
+Fraction of synapses unclustered = 0.2295
+clustering takes 36.95 secondsPruned percentage of Layer 2 : 23.05%.
+Fraction of synapses unclustered = 0.2326
+clustering takes 4.56 secondsPruned percentage of Layer 3 : 20.83%.
+epoch 9/20. Took 10.2971 seconds. Mini-batch mean squared error on training set is 0.043416; Full-batch train err = 0.031818
+Pruned percentage of Layer 1 : 22.35%.
+Pruned percentage of Layer 2 : 25.43%.
+Pruned percentage of Layer 3 : 22.28%.
+epoch 10/20. Took 10.3 seconds. Mini-batch mean squared error on training set is 0.040673; Full-batch train err = 0.029428
+Pruned percentage of Layer 1 : 24.45%.
+Pruned percentage of Layer 2 : 27.69%.
+Pruned percentage of Layer 3 : 23.62%.
+epoch 11/20. Took 10.259 seconds. Mini-batch mean squared error on training set is 0.03836; Full-batch train err = 0.027090
+Pruned percentage of Layer 1 : 26.50%.
+Pruned percentage of Layer 2 : 29.88%.
+Pruned percentage of Layer 3 : 24.91%.
+epoch 12/20. Took 10.2604 seconds. Mini-batch mean squared error on training set is 0.036188; Full-batch train err = 0.025784
+Pruned percentage of Layer 1 : 28.44%.
+Pruned percentage of Layer 2 : 32.00%.
+Pruned percentage of Layer 3 : 25.88%.
+epoch 13/20. Took 10.2811 seconds. Mini-batch mean squared error on training set is 0.034548; Full-batch train err = 0.023974
+Pruned percentage of Layer 1 : 30.33%.
+Pruned percentage of Layer 2 : 34.02%.
+Pruned percentage of Layer 3 : 27.00%.
+epoch 14/20. Took 10.2423 seconds. Mini-batch mean squared error on training set is 0.03293; Full-batch train err = 0.022387
+Pruned percentage of Layer 1 : 32.13%.
+Pruned percentage of Layer 2 : 35.93%.
+Pruned percentage of Layer 3 : 28.07%.
+epoch 15/20. Took 10.2765 seconds. Mini-batch mean squared error on training set is 0.031462; Full-batch train err = 0.021230
+Pruned percentage of Layer 1 : 33.91%.
+Pruned percentage of Layer 2 : 37.76%.
+Pruned percentage of Layer 3 : 28.96%.
+epoch 16/20. Took 10.2372 seconds. Mini-batch mean squared error on training set is 0.030373; Full-batch train err = 0.020423
+Pruned percentage of Layer 1 : 35.60%.
+Pruned percentage of Layer 2 : 39.47%.
+Pruned percentage of Layer 3 : 29.85%.
+epoch 17/20. Took 10.2803 seconds. Mini-batch mean squared error on training set is 0.02933; Full-batch train err = 0.019290
+Pruned percentage of Layer 1 : 37.25%.
+Pruned percentage of Layer 2 : 41.10%.
+Pruned percentage of Layer 3 : 30.71%.
+epoch 18/20. Took 10.3313 seconds. Mini-batch mean squared error on training set is 0.028286; Full-batch train err = 0.018298
+Pruned percentage of Layer 1 : 38.81%.
+Pruned percentage of Layer 2 : 42.61%.
+Pruned percentage of Layer 3 : 31.67%.
+epoch 19/20. Took 10.2457 seconds. Mini-batch mean squared error on training set is 0.027467; Full-batch train err = 0.017716
+Pruned percentage of Layer 1 : 40.31%.
+Pruned percentage of Layer 2 : 44.02%.
+Pruned percentage of Layer 3 : 32.67%.
+epoch 20/20. Took 10.3324 seconds. Mini-batch mean squared error on training set is 0.026578; Full-batch train err = 0.017065
+Pruned percentage of Layer 1 : 41.75%.
+Pruned percentage of Layer 2 : 45.33%.
+Pruned percentage of Layer 3 : 33.77%.
+TRAINING Accuracy: 98.93%.
+Test Accuracy: 97.80%.
+Fraction of synapses unclustered = 0.0802
+Fraction of synapses unclustered = 0.1150
+Fraction of synapses unclustered = 0.2051

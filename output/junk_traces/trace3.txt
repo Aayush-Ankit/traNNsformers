@@ -1,0 +1,1599 @@
+epoch 1/40. Took 10.4301 seconds. Mini-batch mean squared error on training set is 0.34355; Full-batch train err = 0.163982
+Pruned percentage of Layer 1 : 0.00%.
+Pruned percentage of Layer 2 : 0.00%.
+Pruned percentage of Layer 3 : 0.00%.
+increasing the pruning threshold 
+epoch 2/40. Took 10.3802 seconds. Mini-batch mean squared error on training set is 0.13048; Full-batch train err = 0.091394
+Pruned percentage of Layer 1 : 4.72%.
+Pruned percentage of Layer 2 : 4.83%.
+Pruned percentage of Layer 3 : 8.68%.
+increasing the pruning threshold 
+epoch 3/40. Took 10.1666 seconds. Mini-batch mean squared error on training set is 0.091544; Full-batch train err = 0.070549
+Pruned percentage of Layer 1 : 9.35%.
+Pruned percentage of Layer 2 : 9.61%.
+Pruned percentage of Layer 3 : 15.56%.
+increasing the pruning threshold 
+epoch 4/40. Took 10.1586 seconds. Mini-batch mean squared error on training set is 0.074881; Full-batch train err = 0.058561
+Pruned percentage of Layer 1 : 13.95%.
+Pruned percentage of Layer 2 : 14.60%.
+Pruned percentage of Layer 3 : 21.37%.
+increasing the pruning threshold 
+epoch 5/40. Took 10.2077 seconds. Mini-batch mean squared error on training set is 0.06409; Full-batch train err = 0.049411
+Pruned percentage of Layer 1 : 18.62%.
+Pruned percentage of Layer 2 : 19.65%.
+Pruned percentage of Layer 3 : 25.47%.
+increasing the pruning threshold 
+epoch 6/40. Took 10.1632 seconds. Mini-batch mean squared error on training set is 0.056647; Full-batch train err = 0.043183
+Pruned percentage of Layer 1 : 23.32%.
+Pruned percentage of Layer 2 : 24.46%.
+Pruned percentage of Layer 3 : 28.47%.
+increasing the pruning threshold 
+epoch 7/40. Took 10.1297 seconds. Mini-batch mean squared error on training set is 0.050992; Full-batch train err = 0.038560
+Pruned percentage of Layer 1 : 27.93%.
+Pruned percentage of Layer 2 : 29.03%.
+Pruned percentage of Layer 3 : 30.95%.
+increasing the pruning threshold 
+epoch 8/40. Took 10.2515 seconds. Mini-batch mean squared error on training set is 0.046928; Full-batch train err = 0.035409
+Base_quality for clustering: 0.700000
+Fraction of synapses unclustered = 0.6107
+clustering takes 9.53 seconds
+Pruned percentage of Layer 1 : 22.88%.
+Base_quality for clustering: 0.700000
+Fraction of synapses unclustered = 0.7684
+clustering takes 11.75 seconds
+Pruned percentage of Layer 2 : 28.19%.
+Base_quality for clustering: 0.700000
+Fraction of synapses unclustered = 0.8605
+clustering takes 0.75 seconds
+Pruned percentage of Layer 3 : 28.90%.
+increasing the pruning threshold 
+epoch 9/40. Took 10.5704 seconds. Mini-batch mean squared error on training set is 0.043589; Full-batch train err = 0.032055
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.48 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 0.8242
+clustering takes 3.32 seconds
+Pruned percentage of Layer 1 : 22.08%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.96 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 0.6470
+clustering takes 10.17 seconds
+Pruned percentage of Layer 2 : 22.14%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.16 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 0.8885
+clustering takes 0.85 seconds
+Pruned percentage of Layer 3 : 27.59%.
+increasing the pruning threshold 
+epoch 10/40. Took 10.5478 seconds. Mini-batch mean squared error on training set is 0.040529; Full-batch train err = 0.029499
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.53 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.53 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 0.7522
+clustering takes 4.63 seconds
+Pruned percentage of Layer 1 : 19.41%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.90 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.91 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 0.9442
+clustering takes 5.71 seconds
+Pruned percentage of Layer 2 : 23.06%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.17 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.16 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 0.8776
+clustering takes 1.01 seconds
+Pruned percentage of Layer 3 : 26.42%.
+increasing the pruning threshold 
+epoch 11/40. Took 10.4817 seconds. Mini-batch mean squared error on training set is 0.037991; Full-batch train err = 0.027242
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.68 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.66 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.58 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 0.9175
+clustering takes 1.82 seconds
+Pruned percentage of Layer 1 : 19.64%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.18 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.23 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.20 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 0.7880
+clustering takes 4.77 seconds
+Pruned percentage of Layer 2 : 20.45%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.13 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.13 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.17 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 0.8523
+clustering takes 0.51 seconds
+Pruned percentage of Layer 3 : 24.10%.
+increasing the pruning threshold 
+epoch 12/40. Took 10.5184 seconds. Mini-batch mean squared error on training set is 0.036209; Full-batch train err = 0.025122
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.66 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.8004
+clustering takes 2.84 seconds
+Pruned percentage of Layer 1 : 17.65%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.11 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.09 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.13 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.27 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.6430
+clustering takes 9.53 seconds
+Pruned percentage of Layer 2 : 15.91%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.13 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.13 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.13 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.16 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.8120
+clustering takes 0.64 seconds
+Pruned percentage of Layer 3 : 20.63%.
+increasing the pruning threshold 
+epoch 13/40. Took 10.5248 seconds. Mini-batch mean squared error on training set is 0.034442; Full-batch train err = 0.023748
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.77 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.76 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.24 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.84 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.9883
+clustering takes 1.50 seconds
+Pruned percentage of Layer 1 : 18.58%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.00 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.99 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.11 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.05 seconds
+Pruned percentage of Layer 2 : 16.75%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.12 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.12 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.12 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.9945
+clustering takes 0.23 seconds
+Pruned percentage of Layer 3 : 21.41%.
+increasing the pruning threshold 
+epoch 14/40. Took 10.5158 seconds. Mini-batch mean squared error on training set is 0.032693; Full-batch train err = 0.022208
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.77 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.76 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.74 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.75 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.75 seconds
+Pruned percentage of Layer 1 : 19.61%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.10 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.01 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.99 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.99 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.01 seconds
+Pruned percentage of Layer 2 : 17.56%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.12 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.12 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Pruned percentage of Layer 3 : 22.27%.
+increasing the pruning threshold 
+epoch 15/40. Took 10.3337 seconds. Mini-batch mean squared error on training set is 0.031331; Full-batch train err = 0.020846
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.77 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.73 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.73 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.76 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.75 seconds
+Pruned percentage of Layer 1 : 20.60%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.10 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.16 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.08 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.10 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.10 seconds
+Pruned percentage of Layer 2 : 18.34%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.12 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.9918
+clustering takes 0.22 seconds
+Pruned percentage of Layer 3 : 22.85%.
+increasing the pruning threshold 
+epoch 16/40. Took 10.8376 seconds. Mini-batch mean squared error on training set is 0.029819; Full-batch train err = 0.020339
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.88 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.83 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.83 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.80 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.82 seconds
+Pruned percentage of Layer 1 : 21.55%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.14 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.12 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.10 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.10 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.10 seconds
+Pruned percentage of Layer 2 : 19.08%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.12 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.12 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Pruned percentage of Layer 3 : 23.80%.
+increasing the pruning threshold 
+epoch 17/40. Took 10.182 seconds. Mini-batch mean squared error on training set is 0.028924; Full-batch train err = 0.018853
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.84 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.82 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.83 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.82 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.80 seconds
+Pruned percentage of Layer 1 : 22.49%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.09 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.11 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.10 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.11 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.09 seconds
+Pruned percentage of Layer 2 : 19.76%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.9606
+clustering takes 0.22 seconds
+Pruned percentage of Layer 3 : 23.99%.
+increasing the pruning threshold 
+epoch 18/40. Took 10.0976 seconds. Mini-batch mean squared error on training set is 0.027936; Full-batch train err = 0.017752
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.90 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.87 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.88 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.81 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.88 seconds
+Pruned percentage of Layer 1 : 23.37%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.19 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.19 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.22 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.12 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.22 seconds
+Pruned percentage of Layer 2 : 20.42%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Pruned percentage of Layer 3 : 24.85%.
+increasing the pruning threshold 
+epoch 19/40. Took 10.1884 seconds. Mini-batch mean squared error on training set is 0.026869; Full-batch train err = 0.017249
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.91 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.88 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.88 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.89 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.80 seconds
+Pruned percentage of Layer 1 : 24.21%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.19 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.20 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.18 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.21 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.21 seconds
+Pruned percentage of Layer 2 : 21.04%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Pruned percentage of Layer 3 : 25.82%.
+increasing the pruning threshold 
+epoch 20/40. Took 10.2786 seconds. Mini-batch mean squared error on training set is 0.026093; Full-batch train err = 0.016498
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.97 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.91 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.81 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.82 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.88 seconds
+Pruned percentage of Layer 1 : 25.01%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.21 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.20 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.22 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.19 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.19 seconds
+Pruned percentage of Layer 2 : 21.60%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Pruned percentage of Layer 3 : 26.60%.
+increasing the pruning threshold 
+epoch 21/40. Took 10.5843 seconds. Mini-batch mean squared error on training set is 0.025154; Full-batch train err = 0.015473
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.91 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.90 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.82 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.84 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.84 seconds
+Pruned percentage of Layer 1 : 25.74%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.20 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.19 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.11 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.17 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.18 seconds
+Pruned percentage of Layer 2 : 22.11%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Pruned percentage of Layer 3 : 27.38%.
+increasing the pruning threshold 
+epoch 22/40. Took 10.4801 seconds. Mini-batch mean squared error on training set is 0.024529; Full-batch train err = 0.014868
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.63 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.64 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.66 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.60 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Pruned percentage of Layer 1 : 26.09%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.09 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.09 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.21 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.22 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.29 seconds
+Pruned percentage of Layer 2 : 22.54%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.12 seconds
+Pruned percentage of Layer 3 : 28.13%.
+increasing the pruning threshold 
+epoch 23/40. Took 10.4288 seconds. Mini-batch mean squared error on training set is 0.023669; Full-batch train err = 0.014412
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.72 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.70 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.69 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.72 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.70 seconds
+Pruned percentage of Layer 1 : 26.38%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.08 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.08 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.06 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.07 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.07 seconds
+Pruned percentage of Layer 2 : 22.91%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Pruned percentage of Layer 3 : 28.89%.
+increasing the pruning threshold 
+epoch 24/40. Took 10.2299 seconds. Mini-batch mean squared error on training set is 0.023311; Full-batch train err = 0.013726
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.71 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.76 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.74 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.76 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.75 seconds
+Pruned percentage of Layer 1 : 26.64%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.96 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.93 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.04 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.04 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.04 seconds
+Pruned percentage of Layer 2 : 23.25%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Pruned percentage of Layer 3 : 29.55%.
+increasing the pruning threshold 
+epoch 25/40. Took 10.2122 seconds. Mini-batch mean squared error on training set is 0.02253; Full-batch train err = 0.013227
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.73 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.66 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.72 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.71 seconds
+Pruned percentage of Layer 1 : 26.86%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.01 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.96 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.92 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.95 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.96 seconds
+Pruned percentage of Layer 2 : 23.55%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Pruned percentage of Layer 3 : 30.18%.
+increasing the pruning threshold 
+epoch 26/40. Took 10.12 seconds. Mini-batch mean squared error on training set is 0.022013; Full-batch train err = 0.013027
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Pruned percentage of Layer 1 : 27.06%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.06 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.05 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.04 seconds
+Pruned percentage of Layer 2 : 23.84%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Pruned percentage of Layer 3 : 30.78%.
+increasing the pruning threshold 
+epoch 27/40. Took 10.5553 seconds. Mini-batch mean squared error on training set is 0.021632; Full-batch train err = 0.012307
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.63 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.72 seconds
+Pruned percentage of Layer 1 : 27.24%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.02 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.07 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.04 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Pruned percentage of Layer 2 : 24.10%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Pruned percentage of Layer 3 : 31.40%.
+increasing the pruning threshold 
+epoch 28/40. Took 10.2112 seconds. Mini-batch mean squared error on training set is 0.020941; Full-batch train err = 0.012171
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.66 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.64 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.64 seconds
+Pruned percentage of Layer 1 : 27.42%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.05 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.02 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.05 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.02 seconds
+Pruned percentage of Layer 2 : 24.35%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.09 seconds
+Pruned percentage of Layer 3 : 31.83%.
+increasing the pruning threshold 
+epoch 29/40. Took 10.201 seconds. Mini-batch mean squared error on training set is 0.020459; Full-batch train err = 0.011336
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.68 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.66 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.66 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Pruned percentage of Layer 1 : 27.58%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.04 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.05 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.04 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Pruned percentage of Layer 2 : 24.57%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Pruned percentage of Layer 3 : 32.41%.
+increasing the pruning threshold 
+epoch 30/40. Took 10.2416 seconds. Mini-batch mean squared error on training set is 0.020072; Full-batch train err = 0.011414
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.64 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.64 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.64 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.63 seconds
+Pruned percentage of Layer 1 : 27.75%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.12 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.13 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.13 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.44 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.12 seconds
+Pruned percentage of Layer 2 : 24.79%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Pruned percentage of Layer 3 : 33.17%.
+epoch 31/40. Took 10.6699 seconds. Mini-batch mean squared error on training set is 0.019834; Full-batch train err = 0.010982
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Pruned percentage of Layer 1 : 27.80%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.14 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.02 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.06 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.14 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.13 seconds
+Pruned percentage of Layer 2 : 24.83%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.11 seconds
+Pruned percentage of Layer 3 : 33.21%.
+increasing the pruning threshold 
+epoch 32/40. Took 10.7019 seconds. Mini-batch mean squared error on training set is 0.019387; Full-batch train err = 0.010370
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.62 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.63 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.63 seconds
+Pruned percentage of Layer 1 : 27.90%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.09 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.07 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.14 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.14 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.08 seconds
+Pruned percentage of Layer 2 : 24.97%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.08 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Pruned percentage of Layer 3 : 33.47%.
+increasing the pruning threshold 
+epoch 33/40. Took 10.5718 seconds. Mini-batch mean squared error on training set is 0.018899; Full-batch train err = 0.010011
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.60 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Pruned percentage of Layer 1 : 28.02%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.06 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.07 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.16 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.05 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.05 seconds
+Pruned percentage of Layer 2 : 25.14%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Pruned percentage of Layer 3 : 33.91%.
+increasing the pruning threshold 
+epoch 34/40. Took 10.5567 seconds. Mini-batch mean squared error on training set is 0.01865; Full-batch train err = 0.009725
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.60 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.59 seconds
+Pruned percentage of Layer 1 : 28.14%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.04 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.02 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.02 seconds
+Pruned percentage of Layer 2 : 25.31%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Pruned percentage of Layer 3 : 34.53%.
+increasing the pruning threshold 
+epoch 35/40. Took 10.7825 seconds. Mini-batch mean squared error on training set is 0.018155; Full-batch train err = 0.009317
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.66 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.64 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.66 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.67 seconds
+Pruned percentage of Layer 1 : 28.25%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.13 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.08 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.05 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.03 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.02 seconds
+Pruned percentage of Layer 2 : 25.47%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Pruned percentage of Layer 3 : 34.95%.
+increasing the pruning threshold 
+epoch 36/40. Took 10.5455 seconds. Mini-batch mean squared error on training set is 0.018018; Full-batch train err = 0.009016
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.60 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.62 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.63 seconds
+Pruned percentage of Layer 1 : 28.36%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.13 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.11 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.14 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.13 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 1.14 seconds
+Pruned percentage of Layer 2 : 25.62%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Pruned percentage of Layer 3 : 35.38%.
+increasing the pruning threshold 
+epoch 37/40. Took 10.5406 seconds. Mini-batch mean squared error on training set is 0.017593; Full-batch train err = 0.008832
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.59 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.59 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.58 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.59 seconds
+Pruned percentage of Layer 1 : 28.47%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.92 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.91 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.93 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.93 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.91 seconds
+Pruned percentage of Layer 2 : 25.76%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Pruned percentage of Layer 3 : 35.64%.
+increasing the pruning threshold 
+epoch 38/40. Took 10.6516 seconds. Mini-batch mean squared error on training set is 0.017193; Full-batch train err = 0.008556
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.62 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.62 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.64 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.60 seconds
+Pruned percentage of Layer 1 : 28.57%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.95 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.90 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.90 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.92 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.91 seconds
+Pruned percentage of Layer 2 : 25.89%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.07 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Pruned percentage of Layer 3 : 35.97%.
+increasing the pruning threshold 
+epoch 39/40. Took 10.6547 seconds. Mini-batch mean squared error on training set is 0.017136; Full-batch train err = 0.008324
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.62 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.59 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.58 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.58 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.60 seconds
+Pruned percentage of Layer 1 : 28.66%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.93 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.91 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.94 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.94 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.93 seconds
+Pruned percentage of Layer 2 : 26.02%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Pruned percentage of Layer 3 : 36.18%.
+increasing the pruning threshold 
+epoch 40/40. Took 10.6364 seconds. Mini-batch mean squared error on training set is 0.016654; Full-batch train err = 0.008107
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.61 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.66 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.63 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.65 seconds
+Pruned percentage of Layer 1 : 28.75%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.91 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.91 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.90 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.92 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.89 seconds
+Pruned percentage of Layer 2 : 26.13%.
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 1.0000
+clustering takes 0.06 seconds
+Pruned percentage of Layer 3 : 36.52%.
+increasing the pruning threshold 
+TRAINING Accuracy: 99.63%.
+Test Accuracy: 98.30%.
+Fraction of synapses unclustered = 0.0375
+Fraction of synapses unclustered = 0.0255
+Fraction of synapses unclustered = 0.1438

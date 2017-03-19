@@ -1,0 +1,210 @@
+epoch 1/40. Took 10.1619 seconds. Mini-batch mean squared error on training set is 0.34355; Full-batch train err = 0.163982
+Pruned percentage of Layer 1 : 0.00%.
+Pruned percentage of Layer 2 : 0.00%.
+Pruned percentage of Layer 3 : 0.00%.
+increasing the pruning threshold 
+epoch 2/40. Took 10.0111 seconds. Mini-batch mean squared error on training set is 0.13048; Full-batch train err = 0.091394
+Pruned percentage of Layer 1 : 4.72%.
+Pruned percentage of Layer 2 : 4.83%.
+Pruned percentage of Layer 3 : 8.68%.
+increasing the pruning threshold 
+epoch 3/40. Took 10.0995 seconds. Mini-batch mean squared error on training set is 0.091544; Full-batch train err = 0.070549
+Pruned percentage of Layer 1 : 9.35%.
+Pruned percentage of Layer 2 : 9.61%.
+Pruned percentage of Layer 3 : 15.56%.
+increasing the pruning threshold 
+epoch 4/40. Took 10.6411 seconds. Mini-batch mean squared error on training set is 0.074881; Full-batch train err = 0.058561
+Pruned percentage of Layer 1 : 13.95%.
+Pruned percentage of Layer 2 : 14.60%.
+Pruned percentage of Layer 3 : 21.37%.
+increasing the pruning threshold 
+epoch 5/40. Took 10.5546 seconds. Mini-batch mean squared error on training set is 0.06409; Full-batch train err = 0.049411
+Pruned percentage of Layer 1 : 18.62%.
+Pruned percentage of Layer 2 : 19.65%.
+Pruned percentage of Layer 3 : 25.47%.
+increasing the pruning threshold 
+epoch 6/40. Took 10.4432 seconds. Mini-batch mean squared error on training set is 0.056647; Full-batch train err = 0.043183
+Pruned percentage of Layer 1 : 23.32%.
+Pruned percentage of Layer 2 : 24.46%.
+Pruned percentage of Layer 3 : 28.47%.
+increasing the pruning threshold 
+epoch 7/40. Took 10.6626 seconds. Mini-batch mean squared error on training set is 0.050992; Full-batch train err = 0.038560
+Pruned percentage of Layer 1 : 27.93%.
+Pruned percentage of Layer 2 : 29.03%.
+Pruned percentage of Layer 3 : 30.95%.
+increasing the pruning threshold 
+epoch 8/40. Took 10.4923 seconds. Mini-batch mean squared error on training set is 0.046928; Full-batch train err = 0.035409
+Base_quality before clustering: 0.700000
+Fraction of synapses unclustered = 0.6107
+clustering takes 10.92 secondsPruned percentage of Layer 1 : 22.88%.
+Base_quality before clustering: 0.700000
+Fraction of synapses unclustered = 0.7684
+clustering takes 11.63 secondsPruned percentage of Layer 2 : 28.19%.
+Base_quality before clustering: 0.700000
+Fraction of synapses unclustered = 0.8605
+clustering takes 0.79 secondsPruned percentage of Layer 3 : 28.90%.
+increasing the pruning threshold 
+epoch 9/40. Took 10.1314 seconds. Mini-batch mean squared error on training set is 0.043589; Full-batch train err = 0.032055
+Pruned percentage of Layer 1 : 25.61%.
+Pruned percentage of Layer 2 : 31.42%.
+Pruned percentage of Layer 3 : 30.68%.
+increasing the pruning threshold 
+epoch 10/40. Took 10.0844 seconds. Mini-batch mean squared error on training set is 0.041063; Full-batch train err = 0.029372
+Pruned percentage of Layer 1 : 28.25%.
+Pruned percentage of Layer 2 : 34.55%.
+Pruned percentage of Layer 3 : 32.51%.
+increasing the pruning threshold 
+epoch 11/40. Took 10.1116 seconds. Mini-batch mean squared error on training set is 0.038389; Full-batch train err = 0.027285
+Pruned percentage of Layer 1 : 30.83%.
+Pruned percentage of Layer 2 : 37.53%.
+Pruned percentage of Layer 3 : 34.19%.
+increasing the pruning threshold 
+epoch 12/40. Took 10.2921 seconds. Mini-batch mean squared error on training set is 0.036226; Full-batch train err = 0.025309
+Pruned percentage of Layer 1 : 33.27%.
+Pruned percentage of Layer 2 : 40.40%.
+Pruned percentage of Layer 3 : 35.81%.
+increasing the pruning threshold 
+epoch 13/40. Took 10.2086 seconds. Mini-batch mean squared error on training set is 0.034789; Full-batch train err = 0.024010
+Pruned percentage of Layer 1 : 35.63%.
+Pruned percentage of Layer 2 : 43.15%.
+Pruned percentage of Layer 3 : 37.52%.
+increasing the pruning threshold 
+epoch 14/40. Took 10.1758 seconds. Mini-batch mean squared error on training set is 0.033363; Full-batch train err = 0.023005
+Pruned percentage of Layer 1 : 37.95%.
+Pruned percentage of Layer 2 : 45.78%.
+Pruned percentage of Layer 3 : 39.10%.
+increasing the pruning threshold 
+epoch 15/40. Took 10.0836 seconds. Mini-batch mean squared error on training set is 0.032003; Full-batch train err = 0.021367
+Pruned percentage of Layer 1 : 40.18%.
+Pruned percentage of Layer 2 : 48.26%.
+Pruned percentage of Layer 3 : 40.64%.
+increasing the pruning threshold 
+epoch 16/40. Took 10.1742 seconds. Mini-batch mean squared error on training set is 0.030699; Full-batch train err = 0.020406
+Pruned percentage of Layer 1 : 42.34%.
+Pruned percentage of Layer 2 : 50.61%.
+Pruned percentage of Layer 3 : 42.06%.
+increasing the pruning threshold 
+epoch 17/40. Took 10.2312 seconds. Mini-batch mean squared error on training set is 0.029754; Full-batch train err = 0.019415
+Pruned percentage of Layer 1 : 44.41%.
+Pruned percentage of Layer 2 : 52.82%.
+Pruned percentage of Layer 3 : 43.42%.
+increasing the pruning threshold 
+epoch 18/40. Took 10.1827 seconds. Mini-batch mean squared error on training set is 0.028861; Full-batch train err = 0.018479
+Pruned percentage of Layer 1 : 46.40%.
+Pruned percentage of Layer 2 : 54.87%.
+Pruned percentage of Layer 3 : 44.91%.
+increasing the pruning threshold 
+epoch 19/40. Took 10.2227 seconds. Mini-batch mean squared error on training set is 0.027949; Full-batch train err = 0.018024
+Pruned percentage of Layer 1 : 48.28%.
+Pruned percentage of Layer 2 : 56.76%.
+Pruned percentage of Layer 3 : 46.15%.
+increasing the pruning threshold 
+epoch 20/40. Took 10.2638 seconds. Mini-batch mean squared error on training set is 0.027311; Full-batch train err = 0.017226
+Pruned percentage of Layer 1 : 50.08%.
+Pruned percentage of Layer 2 : 58.52%.
+Pruned percentage of Layer 3 : 47.36%.
+increasing the pruning threshold 
+epoch 21/40. Took 10.5318 seconds. Mini-batch mean squared error on training set is 0.026639; Full-batch train err = 0.016605
+Pruned percentage of Layer 1 : 51.70%.
+Pruned percentage of Layer 2 : 60.10%.
+Pruned percentage of Layer 3 : 48.54%.
+increasing the pruning threshold 
+epoch 22/40. Took 10.4853 seconds. Mini-batch mean squared error on training set is 0.02617; Full-batch train err = 0.015987
+Pruned percentage of Layer 1 : 52.47%.
+Pruned percentage of Layer 2 : 61.39%.
+Pruned percentage of Layer 3 : 49.83%.
+increasing the pruning threshold 
+epoch 23/40. Took 10.257 seconds. Mini-batch mean squared error on training set is 0.025643; Full-batch train err = 0.015807
+Pruned percentage of Layer 1 : 53.09%.
+Pruned percentage of Layer 2 : 62.50%.
+Pruned percentage of Layer 3 : 50.98%.
+increasing the pruning threshold 
+epoch 24/40. Took 10.3438 seconds. Mini-batch mean squared error on training set is 0.025204; Full-batch train err = 0.015093
+Pruned percentage of Layer 1 : 53.62%.
+Pruned percentage of Layer 2 : 63.50%.
+Pruned percentage of Layer 3 : 51.97%.
+increasing the pruning threshold 
+epoch 25/40. Took 10.9297 seconds. Mini-batch mean squared error on training set is 0.024748; Full-batch train err = 0.014495
+Pruned percentage of Layer 1 : 54.09%.
+Pruned percentage of Layer 2 : 64.42%.
+Pruned percentage of Layer 3 : 53.01%.
+increasing the pruning threshold 
+epoch 26/40. Took 10.6481 seconds. Mini-batch mean squared error on training set is 0.02428; Full-batch train err = 0.014174
+Pruned percentage of Layer 1 : 54.52%.
+Pruned percentage of Layer 2 : 65.25%.
+Pruned percentage of Layer 3 : 54.01%.
+increasing the pruning threshold 
+epoch 27/40. Took 10.646 seconds. Mini-batch mean squared error on training set is 0.023956; Full-batch train err = 0.013796
+Pruned percentage of Layer 1 : 54.90%.
+Pruned percentage of Layer 2 : 66.03%.
+Pruned percentage of Layer 3 : 54.92%.
+increasing the pruning threshold 
+epoch 28/40. Took 10.6125 seconds. Mini-batch mean squared error on training set is 0.023519; Full-batch train err = 0.013312
+Pruned percentage of Layer 1 : 55.26%.
+Pruned percentage of Layer 2 : 66.75%.
+Pruned percentage of Layer 3 : 55.89%.
+increasing the pruning threshold 
+epoch 29/40. Took 10.714 seconds. Mini-batch mean squared error on training set is 0.023248; Full-batch train err = 0.013069
+Pruned percentage of Layer 1 : 55.58%.
+Pruned percentage of Layer 2 : 67.40%.
+Pruned percentage of Layer 3 : 56.91%.
+increasing the pruning threshold 
+epoch 30/40. Took 10.3759 seconds. Mini-batch mean squared error on training set is 0.022984; Full-batch train err = 0.012801
+Pruned percentage of Layer 1 : 55.89%.
+Pruned percentage of Layer 2 : 68.01%.
+Pruned percentage of Layer 3 : 57.77%.
+increasing the pruning threshold 
+epoch 31/40. Took 10.3988 seconds. Mini-batch mean squared error on training set is 0.022752; Full-batch train err = 0.012619
+Pruned percentage of Layer 1 : 56.17%.
+Pruned percentage of Layer 2 : 68.58%.
+Pruned percentage of Layer 3 : 58.70%.
+increasing the pruning threshold 
+epoch 32/40. Took 10.4199 seconds. Mini-batch mean squared error on training set is 0.022591; Full-batch train err = 0.012239
+Pruned percentage of Layer 1 : 56.44%.
+Pruned percentage of Layer 2 : 69.10%.
+Pruned percentage of Layer 3 : 59.35%.
+increasing the pruning threshold 
+epoch 33/40. Took 10.4471 seconds. Mini-batch mean squared error on training set is 0.022028; Full-batch train err = 0.011986
+Pruned percentage of Layer 1 : 56.68%.
+Pruned percentage of Layer 2 : 69.59%.
+Pruned percentage of Layer 3 : 60.02%.
+increasing the pruning threshold 
+epoch 34/40. Took 10.3915 seconds. Mini-batch mean squared error on training set is 0.022052; Full-batch train err = 0.011561
+Pruned percentage of Layer 1 : 56.92%.
+Pruned percentage of Layer 2 : 70.04%.
+Pruned percentage of Layer 3 : 60.90%.
+increasing the pruning threshold 
+epoch 35/40. Took 10.3695 seconds. Mini-batch mean squared error on training set is 0.021803; Full-batch train err = 0.011370
+Pruned percentage of Layer 1 : 57.13%.
+Pruned percentage of Layer 2 : 70.48%.
+Pruned percentage of Layer 3 : 61.66%.
+increasing the pruning threshold 
+epoch 36/40. Took 10.5742 seconds. Mini-batch mean squared error on training set is 0.021698; Full-batch train err = 0.011251
+Pruned percentage of Layer 1 : 57.34%.
+Pruned percentage of Layer 2 : 70.87%.
+Pruned percentage of Layer 3 : 62.26%.
+increasing the pruning threshold 
+epoch 37/40. Took 10.6722 seconds. Mini-batch mean squared error on training set is 0.021316; Full-batch train err = 0.011274
+Pruned percentage of Layer 1 : 57.54%.
+Pruned percentage of Layer 2 : 71.25%.
+Pruned percentage of Layer 3 : 62.83%.
+epoch 38/40. Took 10.4269 seconds. Mini-batch mean squared error on training set is 0.021389; Full-batch train err = 0.010955
+Pruned percentage of Layer 1 : 57.61%.
+Pruned percentage of Layer 2 : 71.34%.
+Pruned percentage of Layer 3 : 62.92%.
+increasing the pruning threshold 
+epoch 39/40. Took 10.5093 seconds. Mini-batch mean squared error on training set is 0.02082; Full-batch train err = 0.010306
+Pruned percentage of Layer 1 : 57.75%.
+Pruned percentage of Layer 2 : 71.58%.
+Pruned percentage of Layer 3 : 63.24%.
+increasing the pruning threshold 
+epoch 40/40. Took 10.4577 seconds. Mini-batch mean squared error on training set is 0.020508; Full-batch train err = 0.010279
+Pruned percentage of Layer 1 : 57.91%.
+Pruned percentage of Layer 2 : 71.86%.
+Pruned percentage of Layer 3 : 63.80%.
+increasing the pruning threshold 
+TRAINING Accuracy: 99.45%.
+Test Accuracy: 98.20%.
+Fraction of synapses unclustered = 0.1467
+Fraction of synapses unclustered = 0.2651
+Fraction of synapses unclustered = 0.6275
