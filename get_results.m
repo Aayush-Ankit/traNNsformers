@@ -9,6 +9,10 @@ dirspec = 'output/%s';
 epochs_mnist = 40;
 
 %%  MNIST
+% original network - nn.size tells #mPEs used
+
+% pruning only - nn.pmap tells #mPEs used
+% clustured pruning - nn.cluster tells #mPEs used
 data_name = 'mnist';
 epochs = 40;
 prune_slowdown = epochs_mnist / epochs;
