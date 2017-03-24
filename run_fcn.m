@@ -1,4 +1,4 @@
-function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
+function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, prunemode)
 
     % A global file to store the rraces while exectution/training
     global fid;
@@ -47,7 +47,7 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
     opts.numepochs =  epochs;
     opts.batchsize = 400;
     nn.clusterstartepoch = 0.2* opts.numepochs; % epoch when clustering map is created (need to start from somewhat pruned map)
-    nn.prunemode = 2;
+    nn.prunemode = prunemode;
     nn.scaling_pruneRate = prune_slowdown * 0.001*[0.5 0.5 3]; % prune_slowdown is an external parameter
     nn.utilth = 0.01*[70 70 70];
     nn.crossbarSize = 64;
@@ -60,8 +60,11 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
     nn.cluster_prune_acc_loss = 0.6; % in percentage
 
     %% Training with Iterative Clustering + Pruning
-    fid = fopen(sprintf('output/%s/trace.txt', data_name), 'w');
+    fid = fopen(sprintf('output/%s/trace_prunemode%d.txt', data_name, prunemode), 'w');
     fprintf(fid, dataset_pathid);
+    [num_mpe, ~] = get_hardware_params(nn, 0);
+    fprintf(fid, 'Number of mPEs needed before transformation: %d\n', num_mpe);
+    
     % Train - takes about 15 seconds per epoch on my machine
     nn = nntrain(nn, train_x, train_y, opts);
     % Test - should be 98.62% after 15 epochs
@@ -85,8 +88,13 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown)
         end
         saveas(fig, sprintf('output/%s/hist.png', data_name))
     end
-
+    
+    %% Extract the hardware results
+    [num_mpe, ~] = get_hardware_params(nn, prunemode);
+    fprintf(fid, 'Training effort in terms of number of epochs: %d\n', epochs);
+    fprintf(fid, 'Number of mPEs needed after transformation: %d\n', num_mpe);
+    
     fclose(fid);
-    save (sprintf('output/%s/nn.mat', data_name), 'nn', 'opts');
+    save (sprintf('output/%s/nn_prunemode%d.mat', data_name, prunemode), 'nn', 'opts');
     
 end

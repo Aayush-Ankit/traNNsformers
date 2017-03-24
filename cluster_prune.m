@@ -42,7 +42,7 @@ global fid;
                 nn.cluster_count{i} = nn.cluster_count{i} + 1; % only for debug
                 inputs = clusters.C{j}.inputs;
                 outputs = clusters.C{j}.outputs;
-                if (c_score(j) < cluster_prune_th)
+                if (c_score(j) <= cluster_prune_th)
                     clusters.C{j}.Q = 0; % making the cluster invalid (cluster is pruned)
                     temp_map1 = nn.cmap{i};
                     temp_map2 = nn.pmap{i};

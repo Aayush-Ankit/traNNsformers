@@ -1,4 +1,4 @@
-function [ num_mpe, avg_util ] = get_hardware_params(path, prunemode)
+function [ num_mpe, avg_util ] = get_hardware_params(nn, prunemode)
 %GET_HARDWARE_PARAMS reuturns an estimate of the number of mPEs being used
 %by the current mapping
 %   prunemode dictates which data structure with nn has network topology
@@ -9,12 +9,13 @@ function [ num_mpe, avg_util ] = get_hardware_params(path, prunemode)
 % prunemode - which mode was used (no pruning, pruning, clustered pruning)
     
     global fid;
-    load (path)
-    xbar_size = nn.crossbarSize;
+    %load (path)
+    %xbar_size = nn.crossbarSize;
+    xbar_size = 4;
     
     %output layer-wise details
-    num_mpe = zeros(size(nn.size,1)-1);
-    avg_util = zeros(size(nn.size,1)-1);
+    num_mpe = zeros(size(nn.size,2)-1,1);
+    avg_util = zeros(size(nn.size,2)-1,1);
     
     switch prunemode
         % no pruning
@@ -51,15 +52,18 @@ function [ num_mpe, avg_util ] = get_hardware_params(path, prunemode)
             % scan the map layer-wise - counting crossbars for clustered
             % synapses only - update to add the unclustered synapses also
             for i = 1:(nn.n-1)
-                cluster_list = nn.cluster{i};
+                cluster_list = nn.clusters{i};
                 for j = 1:cluster_list.size
                     % process valid clusters only
                     cluster = cluster_list.C{j};
                     if (cluster.Q ~= 0)
                         % may need to check for all zero rows/columns - not included now (CHECK!)
-                        num_mpe(i) = num_mpe(i) + ceil(num_in/xbar_size) * ceil(num_out/xbar_size);
+                        num_mpe(i) = num_mpe(i) + ceil(cluster.num_in/xbar_size) * ceil(cluster.num_out/xbar_size);
                     end
                 end
+                unclustered_map = (nn.pmap{i} == 1) & (nn.cmap{i} == 0);
+                num_mpe(i) = num_mpe(i) + map_unclustered(unclustered_map, xbar_size);
+                % not important now - UPDATE LATER!
                 avg_util(i) = 1;
             end 
     end

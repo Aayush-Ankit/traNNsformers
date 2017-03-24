@@ -14,6 +14,7 @@ end
 
 test_acc_base = (1-last_err)*100;
 while (true)
+    disp('Entering loop...\n')
     wt_restore = nn.W;
     map_restore = nn.map;
     nn = cluster_prune(nn);
@@ -21,7 +22,12 @@ while (true)
 %     train_y = train_y((1:1000),:);
     [er, ~] = nntest(nn, train_x, train_y);
     test_acc_curr = (1-er)*100;
-    if ((test_acc_base-test_acc_curr) >= nn.cluster_prune_acc_loss)
+    fprintf('test_acc_base-test_acc_curr: %f\n', test_acc_base-test_acc_curr)
+    fprintf('base_acc: %f\n', test_acc_base)
+    fprintf('base_curr: %f\n', test_acc_curr)
+    fprintf('nn.cluster_prune_factor %f\n', nn.cluster_prune_factor)
+
+    if ((nn.cluster_prune_factor > 1) || (test_acc_base-test_acc_curr) >= nn.cluster_prune_acc_loss)
         nn.map = map_restore;
         nn.W = wt_restore;
         fprintf(fid, 'breaking off the cluster_prune loop\n');

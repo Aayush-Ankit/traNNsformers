@@ -96,7 +96,7 @@ for i = 1 : numepochs
         for p = 1:nn.n-1
             nn.pruneth{p} = nn.pruneth{p} + nn.scaling_pruneRate(p);
         end
-        if (i >= nn.cluster_prune_start) % start cluster_pruning towards the later end of training
+        if ((nn.prunemode == 2) && (i >= nn.cluster_prune_start)) % start cluster_pruning towards the later end of training
             fprintf(fid, 'Cluster prune starts \n');
             nn = cluster_prune_wrapper (nn, base_err_cluster_prune, train_x, train_y );
         end
