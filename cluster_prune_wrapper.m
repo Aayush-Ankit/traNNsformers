@@ -4,65 +4,117 @@ function nn = cluster_prune_wrapper( nn, last_err, train_x, train_y )
 
 % Cluster_prune incrementally (after training finishes) to prune while constraining the accuracy loss
 % - note this isn't accompanied by any weight training now.
-global fid;
+    global fid;
 
-% for debug only
-for i = 1:nn.n-1
-    prunestats = 100* sum(sum(nn.map{i}))/(size(nn.map{i},1) * size(nn.map{i},2));
-    fprintf(fid, 'Layer %d Pruned before cluster pruning : %2.2f\n', i, 100-prunestats); % only for debug
-end
-
-test_acc_base = (1-last_err)*100;
-while (true)
-    disp('Entering loop...\n')
-    wt_restore = nn.W;
-    map_restore = nn.map;
-    nn = cluster_prune(nn);
-%     train_x = train_x((1:1000),:); % reduce the no. of training samples being used for validation of cluster pruning
-%     train_y = train_y((1:1000),:);
-    [er, ~] = nntest(nn, train_x, train_y);
-    test_acc_curr = (1-er)*100;
-    fprintf('test_acc_base-test_acc_curr: %f\n', test_acc_base-test_acc_curr)
-    fprintf('base_acc: %f\n', test_acc_base)
-    fprintf('base_curr: %f\n', test_acc_curr)
-    fprintf('nn.cluster_prune_factor %f\n', nn.cluster_prune_factor)
-
-    if ((nn.cluster_prune_factor > 1) || (test_acc_base-test_acc_curr) >= nn.cluster_prune_acc_loss)
-        nn.map = map_restore;
-        nn.W = wt_restore;
-        fprintf(fid, 'breaking off the cluster_prune loop\n');
-        break;
+    % for debug only
+    for i = 1:nn.n-1
+        prunestats = 100* sum(sum(nn.map{i}))/(size(nn.map{i},1) * size(nn.map{i},2));
+        fprintf(fid, 'Layer %d Pruned before cluster pruning : %2.2f\n', i, 100-prunestats); % only for debug
     end
-    nn.cluster_prune_factor = nn.cluster_prune_factor + 0.01;
-end
 
-% for debug only
-for i = 1:nn.n-1
-    prunestats = 100* sum(sum(nn.map{i}))/(size(nn.map{i},1) * size(nn.map{i},2));
-    fprintf(fid, 'Layer %d Pruned after cluster pruning : %2.2f\n', i, 100-prunestats); % only for debug
-end
+    loss.train.e               = [];
+    loss.train.e_frac          = [];
+    loss.val.e                 = [];
+    loss.val.e_frac            = [];
 
-fprintf(fid, 'Accuracy on training set after this group prune: %2.2f%%.\n', (1-er)*100);
+    test_acc_base = (1-last_err)*100;
+    
+%% cluster_prune - implementation - check the clusters and prune based on the criteria (util * #synapses < th) 
+% for every iteration, nn_cp undergoes updates while nn has the original
+% network (before the current iteration) which can be used to revert the
+% changes.
 
-% [er, train_bad] = nntest(nn, train_x, train_y);
-% fprintf(fid, 'TRAINING Accuracy after after all group prunes: %2.2f%%.\n', (1-er)*100);
-% [er, bad] = nntest(nn, test_x, test_y);
-% fprintf(fid, 'Test Accuracy after all group prunes: %2.2f%%.\n', (1-er)*100);
+    while (true)
+        disp('Entering loop...\n')
+        nn_cp = nn;
 
-% % Plot the final cluster quality histograms - after group_prune
-% if_hist = 1;
-% if (nn.prunemode == 2)
-%     % find the updated clustering statistics & plot them (histograms)
-%     figure(2),
-%     for i = 1:nn.n-1
-%         prunestats = 100* sum(sum(nn.map{i}))/(size(nn.map{i},1) * size(nn.map{i},2));
-%         fprintf(fid, 'Pruned percentage of Layer %d Post-Group Prune: %2.2f%%.\n', i, 100-prunestats);
-%         subplot(1,nn.n-1,i),
-%         % final connectivity matrix - logic or of cmap and pmap
-%         conn_matrix = logical(nn.cmap{i}) | logical(nn.pmap{i});
-%         analyse_cluster(nn.clusters{i}, conn_matrix, if_hist);
-%     end
-% end
+        for i = 1:(nn_cp.n-1)
+            clusters = nn_cp.clusters{i};
+            cmap = nn_cp.cmap{i};
+            pmap = nn_cp.pmap{i};
+
+            % fraction of the different types of synapses in the clusters in a
+            % layer
+            frac_syn_c1p1 = zeros(clusters.size,1);
+            num_syn_c1p1 = zeros(clusters.size,1);
+            c_score = zeros(clusters.size,1);
+            for j = 1:clusters.size
+                if (clusters.C{j}.Q ~= 0)
+                    inputs = clusters.C{j}.inputs;
+                    outputs = clusters.C{j}.outputs;
+                    temp_cmap = cmap(outputs, inputs);
+                    temp_pmap = pmap(outputs, inputs);
+
+                    frac_syn_c1p1(j) = sum(sum(temp_cmap .* temp_pmap)) / (size(temp_cmap,1)*size(temp_cmap,2));
+                    num_syn_c1p1(j) = frac_syn_c1p1(j) * size(temp_cmap,1) * size(temp_cmap,2);
+                    c_score(j) = (clusters.C{j}.Q) * num_syn_c1p1(j); 
+                end
+            end
+
+            % prune the map based on cluster_prune_th
+            cluster_prune_th = nn_cp.cluster_prune_factor * max(c_score);
+            nn_cp.cluster_count{i} = 0;
+            for j = 1:clusters.size
+                if (c_score(j) ~= 0) % zero only if the Q value for cluster is zero
+                    nn_cp.cluster_count{i} = nn_cp.cluster_count{i} + 1; % only for debug
+                    inputs = clusters.C{j}.inputs;
+                    outputs = clusters.C{j}.outputs;
+                    if (c_score(j) <= cluster_prune_th)
+                        clusters.C{j}.Q = 0; % making the cluster invalid (cluster is pruned)
+                        temp_map1 = nn_cp.cmap{i};
+                        temp_map2 = nn_cp.pmap{i};
+                        temp_map1(outputs, inputs) = 0;
+                        temp_map2(outputs, inputs) = 0;
+                        nn_cp.cmap{i} = temp_map1;
+                        nn_cp.pmap{i} = temp_map2;
+                    end
+                end
+            end
+            nn_cp.clusters{i} = clusters;
+            nn_cp.map{i} = logical(nn_cp.cmap{i}) | logical(nn_cp.pmap{i});
+            nn_cp.W{i} = nn_cp.W{i} .* double(nn_cp.map{i});
+
+            % for debug only
+            prunestats = 100* sum(sum(nn_cp.map{i}))/(size(nn_cp.map{i},1) * size(nn_cp.map{i},2));
+            fprintf(fid, 'Remaining clusters in Layer %d during cluster_pruning: %d \t pruned: %2.2f\n', i, nn_cp.cluster_count{i}, 100-prunestats); % only for debug
+            if_hist = 0;
+            analyse_cluster(nn_cp.clusters{i}, nn_cp.map{i}, if_hist);
+        end
+
+
+        %% Evaluate the degradation in accuracy and revert back cluster_prune if needed
+        loss = nneval(nn_cp, loss, train_x, train_y);
+        test_acc_curr = (1-loss.train.e(end))*100;
+
+        % for debug only
+        fprintf('test_acc_base-test_acc_curr: %f\n', test_acc_base-test_acc_curr)
+        fprintf('base_acc: %f\n', test_acc_base)
+        fprintf('base_curr: %f\n', test_acc_curr)
+        fprintf('nn.cluster_prune_factor %f\n', nn_cp.cluster_prune_factor)
+        for i = 1:nn_cp.n-1
+            prunestats = 100* sum(sum(nn_cp.map{i}))/(size(nn_cp.map{i},1) * size(nn_cp.map{i},2));
+            fprintf('Wrapper:: Remaining clusters in Layer %d during cluster_pruning: %d \t pruned: %2.2f\n', i, nn_cp.cluster_count{i}, 100-prunestats); % only for debug
+        end
+           
+        if (nn_cp.cluster_prune_factor > 1)
+            fprintf(fid, 'breaking off the cluster_prune loop cluster_prune NA\n');
+            break;
+        elseif ((test_acc_base-test_acc_curr) >= nn_cp.cluster_prune_acc_loss)
+            fprintf(fid, 'breaking off the cluster_prune loop due to accuracy degradation\n');
+            break;
+        end
+        
+        nn_cp.cluster_prune_factor = nn_cp.cluster_prune_factor + 0.01;
+        nn = nn_cp;
+    end
+
+    % for debug only
+    for i = 1:nn.n-1
+        prunestats = 100* sum(sum(nn.map{i}))/(size(nn.map{i},1) * size(nn.map{i},2));
+        fprintf(fid, 'Layer %d Pruned after cluster pruning : %2.2f\n', i, 100-prunestats); % only for debug
+    end
+
+fprintf(fid, 'Accuracy on training set after this group prune: %2.2f%%.\n', test_acc_curr);
 
 end
 

@@ -56,7 +56,7 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, p
     nn.cluster_base_quality_min = 0.3;
     nn.cluster_prune_start = 0;
     nn.cluster_prune_start = 0.9* opts.numepochs;
-    nn.cluster_prune_factor = 0.05;
+    nn.cluster_prune_factor = 0.01;
     nn.cluster_prune_acc_loss = 0.6; % in percentage
 
     %% Training with Iterative Clustering + Pruning

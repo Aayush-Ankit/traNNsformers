@@ -66,6 +66,7 @@ function nn = prunewt(nn, current_epoch)
                     end
                     
                     nn.unclustered_prev{i} = nn.unclustered_curr{i};
+                    fprintf(fid, 'Pruning continues...\n'); % for debug only
                     nn = cdp(nn, i);
                 end
             end
