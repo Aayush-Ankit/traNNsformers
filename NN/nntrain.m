@@ -98,18 +98,10 @@ for i = 1 : numepochs
         end
         if ((nn.prunemode == 2) && (i >= nn.cluster_prune_start)) % start cluster_pruning towards the later end of training
             fprintf(fid, 'Cluster prune starts \n');
-            nn = cluster_prune_wrapper (nn, base_err_cluster_prune, train_x, train_y );
+            nn = cluster_prune_wrapper (nn, train_x, train_y );
         end
     end
     tr_err_prev = loss.train.e(end);
-    
-    % to debug the cluster_prune_wrapper
-    % for debug only
-    fprintf(fid,'check if the prune value in cluster_prune.m get updated to top level nn\n');
-    for p = 1:nn.n-1
-        prunestats = 100* sum(sum(nn.map{p}))/(size(nn.map{p},1) * size(nn.map{p},2));
-        fprintf(fid, 'Layer %d Pruned after cluster pruning : %2.2f\n', p, 100-prunestats); % only for debug
-    end
         
     disp_msg = ['epoch ' num2str(i) '/' num2str(opts.numepochs) '. Took ' num2str(t) ' seconds' ...
           '. Mini-batch mean squared error on training set is ' num2str(mean(L((n-numbatches):(n-1)))) str_perf];

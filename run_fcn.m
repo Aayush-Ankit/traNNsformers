@@ -86,15 +86,14 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, p
             conn_matrix = logical(nn.cmap{i}) | logical(nn.pmap{i});
             analyse_cluster(nn.clusters{i}, conn_matrix, if_hist);
         end
-        saveas(fig, sprintf('output/%s/hist.png', data_name))
+        saveas(fig, sprintf('output/%s/hist%d.png', data_name, prunemode))
     end
+    save (sprintf('output/%s/nn_prunemode%d.mat', data_name, prunemode), 'nn', 'opts');
     
     %% Extract the hardware results
     [num_mpe, ~] = get_hardware_params(nn, prunemode);
     fprintf(fid, 'Training effort in terms of number of epochs: %d\n', epochs);
     fprintf(fid, 'Number of mPEs needed after transformation: %d\n', num_mpe);
-    
     fclose(fid);
-    save (sprintf('output/%s/nn_prunemode%d.mat', data_name, prunemode), 'nn', 'opts');
     
 end

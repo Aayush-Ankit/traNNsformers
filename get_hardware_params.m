@@ -1,4 +1,4 @@
-function [ num_mpe, avg_util ] = get_hardware_params(nn, prunemode)
+function [ num_mpe, avg_util, num_mpe_unclustered ] = get_hardware_params(nn, prunemode)
 %GET_HARDWARE_PARAMS reuturns an estimate of the number of mPEs being used
 %by the current mapping
 %   prunemode dictates which data structure with nn has network topology
@@ -15,12 +15,13 @@ function [ num_mpe, avg_util ] = get_hardware_params(nn, prunemode)
     
     %output layer-wise details
     num_mpe = zeros(size(nn.size,2)-1,1);
+    num_mpe_unclustered = zeros(size(nn.size,2)-1,1);
     avg_util = zeros(size(nn.size,2)-1,1);
     
     switch prunemode
         % no pruning
         case 0
-            fprintf (fid, 'Hardware Parameters for original network\n');
+            %fprintf (fid, 'Hardware Parameters for original network\n'); --
             % scan the connectivity matrix layer-wise
             for i = 1:(nn.n-1)
                 num_mpe(i) = ceil(nn.size(i)/xbar_size) * ceil(nn.size(i+1)/xbar_size);
@@ -29,7 +30,7 @@ function [ num_mpe, avg_util ] = get_hardware_params(nn, prunemode)
             
         % pruning only - no clustering
         case 1
-            fprintf (fid, 'Hardware Parameters for pruned network\n');
+            %fprintf (fid, 'Hardware Parameters for pruned network\n'); -- 
             % scan the pmap layer-wise
             for i = 1:(nn.n-1)
                 pmap_t = nn.pmap{i};
@@ -48,7 +49,7 @@ function [ num_mpe, avg_util ] = get_hardware_params(nn, prunemode)
             
         % clustered pruning - online clustering
         case 2
-            fprintf (fid, 'Hardware Parameters for online clustered network\n');
+            %fprintf (fid, 'Hardware Parameters for online clustered network\n'); --
             % scan the map layer-wise - counting crossbars for clustered
             % synapses only - update to add the unclustered synapses also
             for i = 1:(nn.n-1)
@@ -62,7 +63,8 @@ function [ num_mpe, avg_util ] = get_hardware_params(nn, prunemode)
                     end
                 end
                 unclustered_map = (nn.pmap{i} == 1) & (nn.cmap{i} == 0);
-                num_mpe(i) = num_mpe(i) + map_unclustered(unclustered_map, xbar_size);
+                num_mpe_unclustered(i) = map_unclustered(unclustered_map, xbar_size);
+                num_mpe(i) = num_mpe(i) + num_mpe_unclustered(i);
                 % not important now - UPDATE LATER!
                 avg_util(i) = 1;
             end 

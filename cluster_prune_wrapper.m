@@ -1,4 +1,4 @@
-function nn = cluster_prune_wrapper( nn, last_err, train_x, train_y )
+function nn = cluster_prune_wrapper( nn, train_x, train_y )
 %CLUSTER_PRUNE_WRAPPER wraps around the cluster_prune script to keep doing
 %cluster_prune with increasing threshold until accuracy starts dropping.
 
@@ -12,11 +12,7 @@ function nn = cluster_prune_wrapper( nn, last_err, train_x, train_y )
         fprintf(fid, 'Layer %d Pruned before cluster pruning : %2.2f\n', i, 100-prunestats); % only for debug
     end
 
-    loss.train.e               = [];
-    loss.train.e_frac          = [];
-    loss.val.e                 = [];
-    loss.val.e_frac            = [];
-
+    [last_err, ~] = nntest(nn, train_x, train_y);
     test_acc_base = (1-last_err)*100;
     
 %% cluster_prune - implementation - check the clusters and prune based on the criteria (util * #synapses < th) 
@@ -83,14 +79,9 @@ function nn = cluster_prune_wrapper( nn, last_err, train_x, train_y )
 
 
         %% Evaluate the degradation in accuracy and revert back cluster_prune if needed
-        loss = nneval(nn_cp, loss, train_x, train_y);
-        test_acc_curr = (1-loss.train.e(end))*100;
+        [err, ~] = nntest(nn, train_x, train_y);
+        test_acc_curr = (1-err)*100;
 
-        % for debug only
-        fprintf('test_acc_base-test_acc_curr: %f\n', test_acc_base-test_acc_curr)
-        fprintf('base_acc: %f\n', test_acc_base)
-        fprintf('base_curr: %f\n', test_acc_curr)
-        fprintf('nn.cluster_prune_factor %f\n', nn_cp.cluster_prune_factor)
         for i = 1:nn_cp.n-1
             prunestats = 100* sum(sum(nn_cp.map{i}))/(size(nn_cp.map{i},1) * size(nn_cp.map{i},2));
             fprintf('Wrapper:: Remaining clusters in Layer %d during cluster_pruning: %d \t pruned: %2.2f\n', i, nn_cp.cluster_count{i}, 100-prunestats); % only for debug
@@ -108,7 +99,7 @@ function nn = cluster_prune_wrapper( nn, last_err, train_x, train_y )
         nn = nn_cp;
     end
 
-    % for debug only
+    % analyze the effect of cluster_prune
     for i = 1:nn.n-1
         prunestats = 100* sum(sum(nn.map{i}))/(size(nn.map{i},1) * size(nn.map{i},2));
         fprintf(fid, 'Layer %d Pruned after cluster pruning : %2.2f\n', i, 100-prunestats); % only for debug
