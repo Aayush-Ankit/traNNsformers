@@ -21,7 +21,7 @@ function [ num_mpe, avg_util, num_mpe_unclustered ] = get_hardware_params(nn, pr
     switch prunemode
         % no pruning
         case 0
-            %fprintf (fid, 'Hardware Parameters for original network\n'); --
+            fprintf (fid, 'Hardware Parameters for original network\n');
             % scan the connectivity matrix layer-wise
             for i = 1:(nn.n-1)
                 num_mpe(i) = ceil(nn.size(i)/xbar_size) * ceil(nn.size(i+1)/xbar_size);
@@ -30,7 +30,7 @@ function [ num_mpe, avg_util, num_mpe_unclustered ] = get_hardware_params(nn, pr
             
         % pruning only - no clustering
         case 1
-            %fprintf (fid, 'Hardware Parameters for pruned network\n'); -- 
+            fprintf (fid, 'Hardware Parameters for pruned network\n');
             % scan the pmap layer-wise
             for i = 1:(nn.n-1)
                 pmap_t = nn.pmap{i};
@@ -49,7 +49,7 @@ function [ num_mpe, avg_util, num_mpe_unclustered ] = get_hardware_params(nn, pr
             
         % clustered pruning - online clustering
         case 2
-            %fprintf (fid, 'Hardware Parameters for online clustered network\n'); --
+            fprintf (fid, 'Hardware Parameters for online clustered network\n');
             % scan the map layer-wise - counting crossbars for clustered
             % synapses only - update to add the unclustered synapses also
             for i = 1:(nn.n-1)

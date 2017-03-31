@@ -79,13 +79,8 @@ function nn = cluster_prune_wrapper( nn, train_x, train_y )
 
 
         %% Evaluate the degradation in accuracy and revert back cluster_prune if needed
-        [err, ~] = nntest(nn, train_x, train_y);
+        [err, ~] = nntest(nn_cp, train_x, train_y);
         test_acc_curr = (1-err)*100;
-
-        for i = 1:nn_cp.n-1
-            prunestats = 100* sum(sum(nn_cp.map{i}))/(size(nn_cp.map{i},1) * size(nn_cp.map{i},2));
-            fprintf('Wrapper:: Remaining clusters in Layer %d during cluster_pruning: %d \t pruned: %2.2f\n', i, nn_cp.cluster_count{i}, 100-prunestats); % only for debug
-        end
            
         if (nn_cp.cluster_prune_factor > 1)
             fprintf(fid, 'breaking off the cluster_prune loop cluster_prune NA\n');
@@ -98,14 +93,16 @@ function nn = cluster_prune_wrapper( nn, train_x, train_y )
         nn_cp.cluster_prune_factor = nn_cp.cluster_prune_factor + 0.01;
         nn = nn_cp;
     end
-
+    
     % analyze the effect of cluster_prune
+    [err, ~] = nntest(nn, train_x, train_y);
+    test_acc = (1-err)*100;
     for i = 1:nn.n-1
         prunestats = 100* sum(sum(nn.map{i}))/(size(nn.map{i},1) * size(nn.map{i},2));
         fprintf(fid, 'Layer %d Pruned after cluster pruning : %2.2f\n', i, 100-prunestats); % only for debug
     end
 
-fprintf(fid, 'Accuracy on training set after this group prune: %2.2f%%.\n', test_acc_curr);
+    fprintf(fid, 'Accuracy on training set after this group prune: %2.2f%%.\n', test_acc);
 
 end
 

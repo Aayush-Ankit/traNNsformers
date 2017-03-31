@@ -48,8 +48,8 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, p
     opts.batchsize = 400;
     nn.clusterstartepoch = 0.2* opts.numepochs; % epoch when clustering map is created (need to start from somewhat pruned map)
     nn.prunemode = prunemode;
-    nn.scaling_pruneRate = prune_slowdown * 0.001*[0.5 0.5 3]; % prune_slowdown is an external parameter
-    nn.utilth = 0.01*[70 70 70];
+    nn.scaling_pruneRate = prune_slowdown * 0.001*[0.5 0.5 0.5 3]; % prune_slowdown is an external parameter
+    nn.utilth = 0.01*[70 70 70 70];
     nn.crossbarSize = 64;
     nn.tol = 0.05; % delta_unclustered synpases when pruning should be stopped
     nn.cluster_base_quality_max = 0.7;
@@ -57,10 +57,10 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, p
     nn.cluster_prune_start = 0;
     nn.cluster_prune_start = 0.9* opts.numepochs;
     nn.cluster_prune_factor = 0.01;
-    nn.cluster_prune_acc_loss = 0.6; % in percentage
+    nn.cluster_prune_acc_loss = 1.6; % in percentage
 
     %% Training with Iterative Clustering + Pruning
-    fid = fopen(sprintf('output/%s/trace_prunemode%d.txt', data_name, prunemode), 'w');
+    fid = fopen(sprintf('output/%s/trace_prunemode%d_numlayers%d_xbarutilmin%0.2f.txt', data_name, prunemode, nn.n-1, nn.cluster_base_quality_min), 'w');
     fprintf(fid, dataset_pathid);
     [num_mpe, ~] = get_hardware_params(nn, 0);
     fprintf(fid, 'Number of mPEs needed before transformation: %d\n', num_mpe);
@@ -86,14 +86,15 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, p
             conn_matrix = logical(nn.cmap{i}) | logical(nn.pmap{i});
             analyse_cluster(nn.clusters{i}, conn_matrix, if_hist);
         end
-        saveas(fig, sprintf('output/%s/hist%d.png', data_name, prunemode))
+        saveas(fig, sprintf('output/%s/hist_prunemode%d_numlayers%d_xbarutilmin%0.2f.png', data_name, prunemode, nn.n-1, nn.cluster_base_quality_min))
     end
-    save (sprintf('output/%s/nn_prunemode%d.mat', data_name, prunemode), 'nn', 'opts');
+    save (sprintf('output/%s/nn_prunemode%d_numlayers%d_xbarutilmin%0.2f.mat', data_name, prunemode, nn.n-1, nn.cluster_base_quality_min), 'nn', 'opts');
     
     %% Extract the hardware results
-    [num_mpe, ~] = get_hardware_params(nn, prunemode);
+    [num_mpe, ~, num_mpe_unclustered] = get_hardware_params(nn, prunemode);
     fprintf(fid, 'Training effort in terms of number of epochs: %d\n', epochs);
-    fprintf(fid, 'Number of mPEs needed after transformation: %d\n', num_mpe);
+    fprintf(fid, 'Total Number of mPEs needed after transformation: %d\n', num_mpe);
+    fprintf(fid, 'Number of mPEs needed for unclustered synapses: %d\n', num_mpe_unclustered);
     fclose(fid);
     
 end

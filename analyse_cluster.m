@@ -28,8 +28,9 @@ function [ ] = analyse_cluster(clusters, conn_matrix, if_hist)
 %     frac_unclustered_synapses = 1 - sum(sum(cluster_map .* conn_matrix))/ sum(sum(conn_matrix)); % conn_matrix the logical or of pmap and cmap
     % statistics - this is the fraction out of total synapses (not remaining unpruned synapses)
     unclus_map = (cluster_map == 0);
+    unclus_map = unclus_map .* conn_matrix;
     [h,k] = size(unclus_map);
-    frac_unclustered_synapses = sum(sum(unclus_map .* conn_matrix))/ (h*k);
+    frac_unclustered_synapses = sum(sum(unclus_map))/ (h*k);
     
     
     fprintf(fid, 'Fraction of synapses unclustered = %0.4f\n', frac_unclustered_synapses);
