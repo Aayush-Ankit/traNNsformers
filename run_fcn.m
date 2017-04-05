@@ -48,16 +48,15 @@ function nn = run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, p
     opts.batchsize = 400;
     nn.clusterstartepoch = 0.2* opts.numepochs; % epoch when clustering map is created (need to start from somewhat pruned map)
     nn.prunemode = prunemode;
-    nn.scaling_pruneRate = prune_slowdown * 0.001*[0.5 0.5 0.5 3]; % prune_slowdown is an external parameter
+    nn.scaling_pruneRate = prune_slowdown * 0.001*[0.5 0.5 0.5 2.5]; % prune_slowdown is an external parameter
     nn.utilth = 0.01*[70 70 70 70];
     nn.crossbarSize = 64;
     nn.tol = 0.05; % delta_unclustered synpases when pruning should be stopped
     nn.cluster_base_quality_max = 0.7;
     nn.cluster_base_quality_min = 0.3;
     nn.cluster_prune_start = 0;
-    nn.cluster_prune_start = 0.9* opts.numepochs;
-    nn.cluster_prune_factor = 0.01;
-    nn.cluster_prune_acc_loss = 1.6; % in percentage
+    nn.cluster_prune_start = 0.8* opts.numepochs;
+    nn.scale_clusterpruneRate = [0.01 0.01 0.01 0.01];
 
     %% Training with Iterative Clustering + Pruning
     fid = fopen(sprintf('output/%s/trace_prunemode%d_numlayers%d_xbarutilmin%0.2f.txt', data_name, prunemode, nn.n-1, nn.cluster_base_quality_min), 'w');

@@ -2,21 +2,29 @@ function nn_cp = cluster_prune( nn )
 
 global fid;
 
-%GROUP_PRUNE checks whether if an existing cluster can be pruned altogether
-%or not based on cmap & pmap
+%CLUSTER_PRUNE prunes previously formed synapse clusters based on a
+%cluster_prune_threshold
     
 % currently this function analyses the fractional distribution of the two
 % types of synapses in the clusters in all the layers after training
 % (i)   (cmap == 1) & (pmap == 1)
 % (ii)  (cmap == 1) & (pmap == 0)
-
-%    figure(1), % plot the histogram of fractions of all types of synapses across all the clusters
+    
+    fprintf(fid, 'Cluster prune ....\n');
+   
+    % for debug only
+    for i = 1:nn.n-1
+        prunestats = 100* sum(sum(nn.map{i}))/(size(nn.map{i},1) * size(nn.map{i},2));
+        fprintf(fid, 'Layer %d Pruned before cluster pruning : %2.2f\n', i, 100-prunestats);
+    end
+    
     nn_cp = nn;
+    % Analyse the cluster scores of all invalid clusters
     for i = 1:(nn_cp.n-1)
         clusters = nn_cp.clusters{i};
         cmap = nn_cp.cmap{i};
         pmap = nn_cp.pmap{i};
-        
+
         % fraction of the different types of synapses in the clusters in a
         % layer
         frac_syn_c1p1 = zeros(clusters.size,1);
@@ -34,9 +42,9 @@ global fid;
                 c_score(j) = (clusters.C{j}.Q) * num_syn_c1p1(j); 
             end
         end
-        
-        % prune the map based on cluster_prune_th
-        cluster_prune_th = nn_cp.cluster_prune_factor * max(c_score);
+
+        % prune the clusters based on cluster_prune_th
+        cluster_prune_th = nn_cp.cluster_prune_factor{i} * max(c_score);
         nn_cp.cluster_count{i} = 0;
         for j = 1:clusters.size
             if (c_score(j) ~= 0) % zero only if the Q value for cluster is zero
@@ -57,13 +65,13 @@ global fid;
         nn_cp.clusters{i} = clusters;
         nn_cp.map{i} = logical(nn_cp.cmap{i}) | logical(nn_cp.pmap{i});
         nn_cp.W{i} = nn_cp.W{i} .* double(nn_cp.map{i});
-        
+
         % for debug only
         prunestats = 100* sum(sum(nn_cp.map{i}))/(size(nn_cp.map{i},1) * size(nn_cp.map{i},2));
-        fprintf(fid, 'Remaining clusters in Layer %d during cluster_pruning: %d \t pruned: %2.2f\n', i, nn_cp.cluster_count{i}, 100-prunestats); % only for debug
+        fprintf(fid, 'Remaining clusters in Layer %d after cluster_pruning: %d \t pruned: %2.2f\n', i, nn_cp.cluster_count{i}, 100-prunestats); % only for debug
         if_hist = 0;
         analyse_cluster(nn_cp.clusters{i}, nn_cp.map{i}, if_hist);
     end
-
+    
 end
 

@@ -83,23 +83,24 @@ for i = 1 : numepochs
     % new addition - prune at the end of each epoch (uses both pmap and
     % cmap) - removes discrete synapses
     nn = prunewt(nn, i);
+    % cluster_prune every epoch (after cluster_prune_start epoch)
+    if ((nn.prunemode == 2) && (i >= nn.cluster_prune_start))
+        nn = cluster_prune(nn);
+    end
+    
     % new addition - increase the prune threhold of each layer after an epoch
     % If the tr_error decreases then
     % 1. increase the pruning threshold (discrete synapses)
-    % 2. go for cluster pruning
-    
-    if (i == nn.cluster_prune_start) % record the base err before the custer prune begins
-        base_err_cluster_prune = loss.train.e(end); end
-    
+    % 2. inclrease the cluster_prune threshold (clustered synapses)
     if (tr_err_prev > loss.train.e(end))
         fprintf(fid, 'increasing the pruning threshold err_prev = %0.4f\t err_crr = %0.4f\n', tr_err_prev, loss.train.e(end));
         for p = 1:nn.n-1
             nn.pruneth{p} = nn.pruneth{p} + nn.scaling_pruneRate(p);
-        end
-        if ((nn.prunemode == 2) && (i >= nn.cluster_prune_start)) % start cluster_pruning towards the later end of training
-            fprintf(fid, 'Cluster prune starts \n');
-            nn = cluster_prune_wrapper (nn, train_x, train_y );
-        end
+            if ((nn.prunemode == 2) && (i >= nn.cluster_prune_start)) % start cluster_pruning towards the later end of training
+                fprintf(fid, 'increasing the cluster pruning threshold');
+                nn.cluster_prune_factor{p} = nn.cluster_prune_factor{p} + nn.scale_clusterpruneRate(p);
+            end
+        end      
     end
     tr_err_prev = loss.train.e(end);
         

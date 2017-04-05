@@ -38,6 +38,9 @@ function nn = nnsetup(architecture)
         nn.pruneth{i-1} = 0;
         nn.pmap{i-1} = ones(nn.size(i), nn.size(i - 1));
         
+        % new addition - cluster prune factor
+        nn.cluster_prune_factor{i-1} = 0.005;
+        
         % new addition - cluster threshold & cluster map
         nn.cmap{i-1} = ones(nn.size(i), nn.size(i - 1));
         
@@ -55,5 +58,6 @@ function nn = nnsetup(architecture)
     for i = 1 : (nn.n-1) 
         nn.cluster_count{i} = 0;
     end
+    
     
 end

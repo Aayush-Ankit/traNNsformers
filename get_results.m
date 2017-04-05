@@ -22,33 +22,18 @@ epochs_mnist = 40;
 % 
 % % run prunemode = 1 - pruning only
 % prunemode = 1;
-% run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, prunemode)
+% run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown*0.7, prunemode)
 % 
 % % run prunemode = 2 - clustered pruning
+% epochs = 60;
 % prunemode = 2;
 % run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, prunemode)
 
 %% SVHN
-data_name = 'svhn';
-epochs = 160;
-prune_slowdown = epochs_mnist / epochs;
-net = [1024, 1200, 1200, 1200, 10];
-dataset_pathid = sprintf (dataset_path, data_name);
-mkdir (sprintf (dirspec, data_name));
-
-% % run prunemode = 1 - pruning only
-% prunemode = 1;
-% run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown*0.6, prunemode)
-
-% run prunemode = 2 - clustered pruning
-prunemode = 2;
-run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, prunemode)
-
-%% CIFAR10
-% data_name = 'cifar10';
-% epochs = 120;
+% data_name = 'svhn';
+% epochs = 80;
 % prune_slowdown = epochs_mnist / epochs;
-% net = [1024, 1200, 1200, 10];
+% net = [1024, 1200, 1200, 1200, 10];
 % dataset_pathid = sprintf (dataset_path, data_name);
 % mkdir (sprintf (dirspec, data_name));
 % 
@@ -57,6 +42,26 @@ run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, prunemode)
 % run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown*0.6, prunemode)
 % 
 % % run prunemode = 2 - clustered pruning
+% epochs = 120;
+% prune_slowdown = epochs_mnist / epochs;
+% prunemode = 2;
+% run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, prunemode)
+
+%% CIFAR10
+data_name = 'cifar10';
+epochs = 160;
+prune_slowdown = epochs_mnist / epochs;
+net = [1024, 1200, 1200, 1200, 10];
+dataset_pathid = sprintf (dataset_path, data_name);
+mkdir (sprintf (dirspec, data_name));
+
+% run prunemode = 1 - pruning only
+prunemode = 1;
+run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown*0.8, prunemode)
+
+% % run prunemode = 2 - clustered pruning
+% epochs = 240;
+% prune_slowdown = epochs_mnist / epochs;
 % prunemode = 2;
 % run_fcn (data_name, dataset_pathid, net, epochs, prune_slowdown, prunemode)
 
