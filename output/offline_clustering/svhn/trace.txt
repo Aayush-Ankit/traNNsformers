@@ -1,0 +1,97 @@
+Layer: 1 Clustering of unclustered synapses being tried...
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 0.2761
+clustering takes 1.35 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 0.2659
+clustering takes 2.94 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 0.2282
+clustering takes 6.12 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 0.2042
+clustering takes 7.38 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.1836
+clustering takes 11.78 seconds
+Base_quality tried for clustering: 0.200000
+Fraction of synapses unclustered = 0.1085
+clustering takes 14.53 seconds
+Layer: 2 Clustering of unclustered synapses being tried...
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 0.2215
+clustering takes 1.29 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 0.2215
+clustering takes 1.33 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 0.2215
+clustering takes 1.38 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 0.1855
+clustering takes 5.44 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.1645
+clustering takes 11.76 seconds
+Base_quality tried for clustering: 0.200000
+Fraction of synapses unclustered = 0.1410
+clustering takes 12.86 seconds
+Layer: 3 Clustering of unclustered synapses being tried...
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 0.2047
+clustering takes 1.33 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 0.2047
+clustering takes 1.33 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 0.2047
+clustering takes 1.34 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 0.1897
+clustering takes 3.19 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.1635
+clustering takes 7.03 seconds
+Base_quality tried for clustering: 0.200000
+Fraction of synapses unclustered = 0.1249
+clustering takes 13.28 seconds
+Layer: 4 Clustering of unclustered synapses being tried...
+Base_quality tried for clustering: 0.700000
+Fraction of synapses unclustered = 0.1554
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.600000
+Fraction of synapses unclustered = 0.1554
+clustering takes 0.11 seconds
+Base_quality tried for clustering: 0.500000
+Fraction of synapses unclustered = 0.1554
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.400000
+Fraction of synapses unclustered = 0.1554
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.300000
+Fraction of synapses unclustered = 0.1554
+clustering takes 0.10 seconds
+Base_quality tried for clustering: 0.200000
+Fraction of synapses unclustered = 0.1413
+clustering takes 0.41 seconds
+Pruned percentage of Layer 1: 72.39%.
+Fraction of synapses unclustered = 0.1491
+Number of clusters = 1192
+Pruned percentage of Layer 2: 77.85%.
+Fraction of synapses unclustered = 0.3306
+Number of clusters = 670
+Pruned percentage of Layer 3: 79.53%.
+Fraction of synapses unclustered = 0.3377
+Number of clusters = 518
+Pruned percentage of Layer 4: 84.46%.
+Fraction of synapses unclustered = 0.7558
+Number of clusters = 4
+Hardware Parameters for online clustered network
+Total Number of mPEs needed after transformation: 113654
+Total Number of mPEs needed after transformation: 107604
+Total Number of mPEs needed after transformation: 102075
+Total Number of mPEs needed after transformation: 760
+Number of mPEs needed for unclustered synapses: 46465
+Number of mPEs needed for unclustered synapses: 67826
+Number of mPEs needed for unclustered synapses: 67177
+Number of mPEs needed for unclustered synapses: 612
