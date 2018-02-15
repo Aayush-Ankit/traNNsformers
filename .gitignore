@@ -2,3 +2,5 @@
 *.db
 *.m~
 *.swp
+SpectralClustering/
+output/
