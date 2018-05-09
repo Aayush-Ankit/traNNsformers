@@ -1,4 +1,4 @@
-# traNNsformers
+# TraNNsformers
 # Structured clustering for memristive crossbar based neuromorphic architectures
 
 Paper (Published in ICCAD 2017 - https://ieeexplore.ieee.org/document/8203823/):
