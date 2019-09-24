@@ -1,0 +1,15 @@
+# Don't track content of these folders
+CNN_wGPU_AlexNet/CNNoutputs/
+CNN/CNNoutputs/
+NN/NNoutputs/
+NN/peripheral/
+For publication/
+SpectralClustering/
+
+# Large storage files
+*.mat
+
+# Log files
+*.txt
+
+
