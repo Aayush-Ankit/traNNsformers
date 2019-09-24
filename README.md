@@ -10,12 +10,11 @@ TraNNsformer is an integrated MATLAB framework for training MLP and CNN networks
 ## Network Topologies
 TraNNsformer framework is implemented using MATLAB to transform neural networks of two topologies: 
 
-1. Multi-layer perceptrons (MLP) are transformed using codes in [traNNsformers](NN)
+1. Multi-layer perceptrons (MLP) models are specified and transformed using codes in [traNNsformers/NN](NN)
 
-2. Convolutional Neural networks (CNN) are transformed using codes in:
-  a. if GPU support is not available and for small sized networks <CNN>
-  b. if GPU support is available and for large sized networks <CNN_wGPU>
-
+2. Convolutional Neural networks (CNN) models are specified and transformed using codes in:
+  a. if GPU support is not available and for small sized networks [traNNsformers/CNN](CNN)
+  b. if GPU support is available and for large sized networks [traNNsformers/CNN_wGPU](CNN_wGPU_AlexNet)
 
 ## Citation
 Please cite the following paper if you find this work useful:
