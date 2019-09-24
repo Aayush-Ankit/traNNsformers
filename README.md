@@ -13,8 +13,9 @@ TraNNsformer framework is implemented using MATLAB to transform neural networks 
 1. Multi-layer perceptrons (MLP) models are specified and transformed using codes in [traNNsformers/NN](NN)
 
 2. Convolutional Neural networks (CNN) models are specified and transformed using codes in:
-  1. if GPU support is not available and for small sized networks [traNNsformers/CNN](CNN)
-  2. if GPU support is available and for large sized networks [traNNsformers/CNN_wGPU](CNN_wGPU_AlexNet)
+
+    1. if GPU support is not available and for small sized networks [traNNsformers/CNN](CNN)
+    2. if GPU support is available and for large sized networks [traNNsformers/CNN_wGPU](CNN_wGPU_AlexNet)
 
 ## Citation
 Please cite the following paper if you find this work useful:
