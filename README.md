@@ -1,5 +1,5 @@
 # traNNsformers
-This is a repository for an integrated framework for training MLP and CNN networks using structured pruning approach to enable efficient mapping on memristive crossbar based neuromorphic architecures.
+TraNNsformer is an integrated framework for training MLP and CNN networks using structured pruning approach to enable efficient mapping on memristive crossbar based neuromorphic architecures.
 
 ## Citation
 Please cite the following paper if you find this work useful:
