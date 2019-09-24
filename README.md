@@ -14,6 +14,7 @@ TraNNsformer framework is implemented using MATLAB to transform neural networks 
 
 2. Convolutional Neural networks (CNN) models are specified and transformed using codes in:
   a. if GPU support is not available and for small sized networks [traNNsformers/CNN](CNN)
+  
   b. if GPU support is available and for large sized networks [traNNsformers/CNN_wGPU](CNN_wGPU_AlexNet)
 
 ## Citation
