@@ -20,7 +20,7 @@ TraNNsformer framework is implemented using MATLAB to transform neural networks 
 ## Citation
 Please cite the following paper if you find this work useful:
 
-* A. Ankit, T. Ibrayev, A. Sengupta, K. Roy. **TraNNsformer: A Neural Network Transformation Approach for Memristive Crossbar based Neuromorphic System Design**. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2019. 
+* A. Ankit, T. Ibrayev, A. Sengupta, K. Roy. [**TraNNsformer: A Neural Network Transformation Approach for Memristive Crossbar based Neuromorphic System Design**](https://ieeexplore.ieee.org/document/8865639). IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2019.
 
 ## Authors
 
